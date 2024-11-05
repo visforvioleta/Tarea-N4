@@ -47,8 +47,27 @@ ul{
 }
 
 .sidebar {
-    background-color: #D54271;
+    background-image: linear-gradient(45deg, rgba(213,66,113,1) 0%, rgba(45,82,135,1) 100%); 
     color: #fff;
+    padding: clamp(1rem, -0.0435rem + 5.2174vw, 4rem);
+    line-height: clamp(1rem, 0.6522rem + 1.7391vw, 2rem);
+}
+
+.pasos, .indicaciones{
+    margin-left:1rem;
+}
+
+.pasos{
+    list-style: decimal;
+}
+
+.indicaciones{
+    list-style:disc;
+}
+
+.link{
+    color: aquamarine;
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
