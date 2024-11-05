@@ -65,9 +65,17 @@ ul{
     list-style:disc;
 }
 
+.imagen{
+    padding: 4rem;
+}
+
 .link{
     color: aquamarine;
     font-weight: 700;
+}
+
+.img{
+    width: 100%;
 }
 
 @media (max-width: 768px) {
