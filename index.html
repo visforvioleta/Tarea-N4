@@ -8,51 +8,96 @@
     <meta name="description" content="Palabras Descriptivas">
     <meta name="keywords" content="Palabras Claves">
     <meta name="author" content="Markys Prieto - Violeta Alanoca">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="shortcut icon" href="" type="image/x-icon">
     <title>Tarea N4</title>
 </head>
 <body>
+  
     <header class="header">
-        <div class="logo">Tarea Nº4</div>
+        <nav class="header__navbar">
+            <a class="header__logo" href="#">
+                <img src="assets/img/diseno-grafico-logo-1F350FBED3-seeklogo.com.png" alt="Logo" width="80" height="30">
+            </a>
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Inicio</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Servicios</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Noticias</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide carousel--main" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/slide-curso-ciberseguridad.png" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/slide-curso-Igualdad.png" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/slide-cursos-TDE.png" class="d-block w-100" alt="Banner 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
 
     <main class="main">
         <section class="content">
-            <h1>Objetivo:</h1>
-            <p>El propósito de esta tarea es que, en equipos de dos personas, trabajen juntos en
-                un proyecto utilizando Git. Deberán aplicar los comandos básicos de Git (clone,
-                push, pull, merge) y trabajar en diferentes ramas para luego combinarlas en la
-                rama principal (main).</p>
-                <ul>Instrucciones:
-                <li>Creen un repositorio en GitHub: Uno de los integrantes deberá crear el
-                repositorio y agregar al compañero como colaborador.</li>
-                <li>Clonen el repositorio: Ambos deberán clonar el repositorio en sus computadoras
-                locales.</li>
-                <li>Cree una rama por cada integrante: Cada uno de los integrantes debe crear su
-                propia rama a partir de main (la rama principal). Nombrar la rama con su nombre o
-                un identificador claro (por ejemplo: rama-nombre1 y rama-nombre2).</li>
-                <li>Realicen cambios en sus respectivas ramas: Cada integrante deberá hacer al
-                menos 3 commits en su propia rama, modificando o agregando archivos al proyecto.
-                Pueden agregar contenido como un archivo .md con descripciones, o editar archivos
-                existentes.</li>
-                <li>Hagan push a sus ramas: Una vez que hayan realizado cambios y hecho commits,
-                deberán hacer git push de sus ramas al repositorio remoto en GitHub.</li>
-                <li>Combinación de ramas (Merge):
-                - Una vez que ambos hayan terminado de trabajar en sus ramas, deberán combinar
-                (merge) sus ramas en la rama main.
-                - Primero, uno de los integrantes debe crear un pull request desde su rama
-                hacia main y hacer el merge.
-                - Luego, el otro integrante deberá hacer lo mismo con su rama.</li>
-                <li>Resolución de conflictos (si los hay): Si al intentar combinar las ramas surge
-                un conflicto, deberán resolverlo entre ambos. Esto puede implicar que se coordinen
-                para revisar los archivos en conflicto y hacer ajustes.</li>
-                <li>Entrega: Una vez completada la tarea, deben mandar la URL del repositorio en
-                GitHub donde podamos revisar:
-                - Los commits realizados por ambos.
-                - Las ramas creadas.
-                - La combinación de ramas (merge) en main.</li></ul>
-        </section>
+           
+    <div class="container text-center my-5">
+        <h2>Conoce nuestras soluciones</h2>
+        <div class="row servicios">
+            <div class="col-md-3 servicios__item">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-camera-retro fa-3x mb-3"></i>
+                        <h5 class="card-title">Programas de Capacitación</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 servicios__item">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-palette fa-3x mb-3"></i>
+                        <h5 class="card-title">Desarrollos a medida</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 servicios__item">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-video fa-3x mb-3"></i>
+                        <h5 class="card-title">Tecnología VR y AR</h5>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
         <aside class="sidebar">
             <h2>Uso de GitHub por Primera Vez</h2>
             Desde la terminal (Comando+Ñ) con GitBash
@@ -86,9 +131,59 @@
         </aside>
     </main>
 
+
+     <!-- Noticias -->
+  <section id="seccionNoticias" class="pb-5">
+    <h1 class="text-center">NOTICIAS</h1>
+<br>
+    <article class="row">
+        <div class="col- 12 col-md-6 col-lg-3">
+            <div class="card">
+                <img src="assets/img/conferencias-en-santiago-2024-6a9633f9.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-text">Descubre las tendencias tecnológicas en Techfuture</h4>
+                    <h3 class=" nav-link btn">Ver Más</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col- 12 col-md-6 col-lg-3">
+            <div class="card">
+                <img src="assets/img/Foto-Nota-Destacado-2-Congreso-Futuro-(cedida).jpg" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-text">
+                        Atom: El robot chileno se presentará en Congreso </h4>
+                    <h3 class=" nav-link  btn">Ver Más</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col- 12 col-md-6 col-lg-3">
+            <div class="card">
+                <img src="assets/img/32228653465_d8a1ea16b9_k.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-text">Coordinación de Modernización con la IA</h4>
+                    <h3 class=" nav-link  btn">Ver Más</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col- 12 col-md-6 col-lg-3">
+            <div class="card">
+                <img src="assets/img//UdeC-Congreso-Futuro-Profesor-Valdivia-04-1024x683.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-text">Charlas sobre seguridad informática y salud mental</h4>
+                    <h3 class=" nav-link btn">Ver Más</h3>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
     <footer class="footer">
         <p>&copy; 2024 Nuestro Sitio Web. Todos los derechos reservados.</p>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
