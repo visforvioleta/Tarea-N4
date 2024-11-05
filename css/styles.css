@@ -47,7 +47,8 @@ ul{
 }
 
 .sidebar {
-    background-color: #ff00c8;
+    background-color: #D54271;
+    color: #fff;
 }
 
 @media (max-width: 768px) {
