@@ -66,9 +66,12 @@ body {
 }
 
 .content, .sidebar {
-    background-color: #f4f4f4;
     padding: 1rem;
     border-radius: 8px;
+}
+
+.content {
+    background-color: #BBDCEF;
 }
 
 .sidebar {
@@ -100,4 +103,5 @@ body {
 
 #seccionNoticias{
     text-align: center;
+    padding: 0 2rem;
 }
